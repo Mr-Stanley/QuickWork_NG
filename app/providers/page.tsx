@@ -64,7 +64,6 @@ const allProviders = [
     id: 4,
     name: "Oyibo laundry Services",
     category:   "Laundry & Dry Cleaning Services",
-
     rating: 4.6,
     reviews: 78,
     location: "Rivers State",
@@ -98,7 +97,7 @@ const allProviders = [
     phone: "+234 806 789 0123",
     email: "Jazmyne@cleaners.ng",
     image: "https://live.staticflickr.com/2403/5787693486_9361fc5d29_b.jpg",
-    description: "Customized cleaning solutions for homes and officess",
+    description: "Customized cleaning solutions for homes and offices",
   },
 ]
 

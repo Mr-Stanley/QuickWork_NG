@@ -98,7 +98,7 @@ const allProviders = [
     phone: "+234 806 789 0123",
     email: "Jazmyne@cleaners.ng",
     image: "https://live.staticflickr.com/2403/5787693486_9361fc5d29_b.jpg",
-    description: "Customized cleaning solutions for homes and offices",
+    description: "Customized cleaning solutions for homes and officess",
   },
 ]
 

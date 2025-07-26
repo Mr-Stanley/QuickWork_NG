@@ -6,9 +6,9 @@ import "./globals.css"
 import { FloatingWhatsApp } from "@/components/floating-whatsapp"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.dev",
+  title: "QucickWork.NG Marketplace",
+  description: "Created by QuickWork.NG, this marketplace connects you with top service providers in Nigeria for all your home and business needs.",
+  generator: "QuickWork.NG Team",
 }
 
 export default function RootLayout({

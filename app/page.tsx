@@ -152,17 +152,14 @@ export default function HomePage() {
             
             <div className="flex items-center space-x-2">
               <div className="hidden sm:flex items-center space-x-2 mr-2">
-                <Link href="/customer/login">
-                  <Button variant="ghost" size="sm">Customer Login</Button>
+                <Link href="/auth/login">
+                  <Button variant="ghost" size="sm">Login</Button>
                 </Link>
-                <Link href="/customer/register">
-                  <Button variant="ghost" size="sm">Sign Up</Button>
+                <Link href="/auth/register">
+                  <Button variant="ghost" size="sm">Create Account</Button>
                 </Link>
               </div>
-              <Link href="/provider/login">
-                <Button variant="outline" className="hidden sm:inline-flex">Provider Login</Button>
-              </Link>
-              <Link href="/provider/register">
+              <Link href="/auth/register?type=provider">
                 <Button className="bg-blue-600 hover:bg-blue-700">Join as Provider</Button>
               </Link>
             </div>
@@ -420,12 +417,12 @@ export default function HomePage() {
                 Sign up to track your service history, save favorite providers, and get personalized recommendations.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Link href="/customer/register">
+                <Link href="/auth/register">
                   <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-                    Sign Up Now
+                    Create Account
                   </Button>
                 </Link>
-                <Link href="/customer/login">
+                <Link href="/auth/login">
                   <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                     Login
                   </Button>
@@ -545,7 +542,7 @@ export default function HomePage() {
                   Find a Professional
                 </Button>
               </Link>
-              <Link href="/provider/register">
+              <Link href="/auth/register?type=provider">
                 <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 hover:scale-105 transition-transform">
                   Become a Provider
                 </Button>
@@ -596,12 +593,12 @@ export default function HomePage() {
               <h4 className="font-semibold mb-4">For Providers</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <Link href="/provider/register" className="hover:text-foreground transition-colors">
+                  <Link href="/auth/register?type=provider" className="hover:text-foreground transition-colors">
                     Join QuickWorkNG
                   </Link>
                 </li>
                 <li>
-                  <Link href="/provider/login" className="hover:text-foreground transition-colors">
+                  <Link href="/auth/login?type=provider" className="hover:text-foreground transition-colors">
                     Provider Login
                   </Link>
                 </li>

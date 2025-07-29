@@ -31,7 +31,7 @@ const allProviders = [
     Address: "123 Clean St, Port Harcourt",
     phone: "+234 801 234 5678",
     email: "info@squegycleaners.com",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShjCzY-hFw0KxhNZYiCm-dq-u2XkSw23cDqw&s",
+    image: "https://cleanfanatics.com/wp-content/uploads/2024/11/81-1.webp",
     description: "Professional Home and office space cleaning services with 10+ years experience",
   },
   {
@@ -57,7 +57,7 @@ const allProviders = [
     Address: "789 Laundry St, Port Harcourt",
     phone: "+234 803 456 7890",
     email: "hello@mrcleanlaundry.com",
-    image: "https://www.shutterstock.com/image-photo/african-american-woman-applying-makeup-600nw-1756304540.jpg",
+    image: "https://counseal.com/app/uploads/2023/11/website-featured-An-Image-depicting-a-laundry-business.jpg",
     description: "Professional laundry and dry cleaning services for all occasions",
   },
   {
@@ -70,7 +70,7 @@ const allProviders = [
     Address: "101 Laundry Ave, Port Harcourt",
     phone: "+234 804 567 8901",
     email: "info@oyibolaundry.com",
-    image: "https://oyibolaundry.com/wp-content/uploads/2024/06/Oyibo_Laundry_-low_res-18.webp",
+    image: "https://rjkool.com/wp-content/uploads/2021/09/laundry-services.jpg",
     description: "Reliable laundry services with quick turnaround and quality care",
   },
   {
@@ -83,7 +83,7 @@ const allProviders = [
     Address: "202 Paint St, Port Harcourt",
     phone: "+234 805 678 9012",
     email: "contact@olabode_paints.ng",
-    image: "https://reapp.com.gh/wp-content/uploads/2024/05/Plumbing-Pipes-4.jpg",
+    image: "https://media.istockphoto.com/id/1372512911/photo/african-american-professional-painter-paints-the-wall-indoors.jpg?s=612x612&w=0&k=20&c=Ca6-TR4UkE7peNh_ARMSr6YIRYpCbWKAO4h4tT5w3z4=",
     description: "Professional painting services available 24/7 for emergencies",
   },
   {
@@ -96,7 +96,7 @@ const allProviders = [
     Address: "101 Cleaning Ave, Port Harcourt",
     phone: "+234 806 789 0123",
     email: "Jazmyne@cleaners.ng",
-    image: "https://live.staticflickr.com/2403/5787693486_9361fc5d29_b.jpg",
+    image: "https://safitimecleaning.com/wp-content/uploads/2023/11/322242097_730151968260790_2753172577036417277_n.jpg",
     description: "Customized cleaning solutions for homes and offices",
   },
 ]

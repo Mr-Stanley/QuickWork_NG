@@ -6,39 +6,38 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 
-// Mock data - in a real app, this would come from a database
 const getProviderData = (id: string) => {
   const providers = {
     "1": {
       id: 1,
-      name: "Adebayo Interiors",
-      category: "Interior & Event Decoration",
+      name: "Squegy Cleaning services",
+      category: "Home Cleaning Services",
       rating: 4.8,
-      reviews: 124,
-      location: "Lagos, Nigeria",
+      reviewCount: 124,
+      location: "Rivers state, Nigeria",
       phone: "+234 801 234 5678",
-      email: "info@adebayointeriors.com",
+      email: "info@squegycleaners.com",
       website: "www.adebayointeriors.com",
       description:
-        "Professional interior design and event decoration services with over 10 years of experience. We specialize in creating beautiful, functional spaces that reflect your personal style and meet your specific needs.",
+        "Professional home cleaning services with over 10 years of experience. We specialize in creating beautiful, functional spaces that reflect your personal style and meet your specific needs.",
       services: [
-        "Interior Design Consultation",
-        "Event Decoration",
-        "Space Planning",
-        "Color Consultation",
-        "Furniture Selection",
-        "Lighting Design",
+        "Home Cleaning",
+        "Deep Cleaning",
+        "Window Cleaning",
+        "Door Cleaning",
+        "Furniture Cleaning",
+        "Appliance Cleaning",
       ],
       experience: "10+ years",
       completedProjects: 250,
       responseTime: "Within 2 hours",
       portfolio: [
-        "https://www.nawy.com/blog/wp-content/uploads/2022/07/interior-design.jpg",
-        "https://res.cloudinary.com/dw4e01qx8/f_auto,q_auto/images/c0kbttkjbzi4t45fufle",
-        "https://www.mydomaine.com/thmb/kjMYOrp05WGONCxNV212TNdL2u0=/2112x0/filters:no_upscale():strip_icc()/organic-modern-design-ideas-14-brophy-interiors-salt-strands-a2cb0c9742fd4604ba6055d34831d54a.png",
-        "https://foyr.com/learn/wp-content/uploads/2022/06/shabby-chic-interior-design-style.jpg",
-        "https://cdn.shopify.com/s/files/1/0534/1718/1337/files/modern-minimalist-living-room-1.webp?v=1663270119",
-        "https://hommes.studio/wp-content/uploads/2022/02/Simvl-66m2-by-Belousova-Interior-02.jpeg",
+        "https://candycanclean.com/wp-content/uploads/2024/04/cleaning-services-company-in-Nairobi-kenya.jpg",
+        "https://www.jaymincleaningservices.co.ke/wp-content/uploads/2025/01/1-22-1-1024x683.jpg",
+        "https://www.medilac.co.za/wp-content/uploads/2021/05/cleaning.jpg",
+        "https://www.cleaningafrica.co.za/wp-content/uploads/2024/05/Commercial-Contract-Cleaning-Services-1.jpg",
+        "https://www.sparkling-solutions.com/images/s-images/ft-box1.jpg",
+        "https://www.aufirstclasscleaninggroup.com.au/wp-content/uploads/2024/10/37077.jpg.webp",
       ],
       reviews: [
         {
@@ -47,7 +46,7 @@ const getProviderData = (id: string) => {
           rating: 5,
           date: "2 weeks ago",
           comment:
-            "Absolutely amazing work! Adebayo transformed our living room into a beautiful, modern space. Highly professional and creative.",
+            "Absolutely amazing work! Squegy transformed our home into a clean, modern space. Highly professional and creative.",
         },
         {
           id: 2,
@@ -55,14 +54,14 @@ const getProviderData = (id: string) => {
           rating: 5,
           date: "1 month ago",
           comment:
-            "Perfect event decoration for our wedding. Everything was exactly as we envisioned. Great attention to detail!",
+            "Perfect home cleaning for our home. Everything was exactly as we envisioned. Great attention to detail!",
         },
         {
           id: 3,
           name: "Temitope Balogun",
           rating: 4,
           date: "2 months ago",
-          comment: "Very satisfied with the interior design consultation. Good value for money and excellent service.",
+          comment: "Very satisfied with the home cleaning services. Good value for money and excellent service.",
         },
       ],
     },
@@ -164,7 +163,7 @@ export default function ProviderProfilePage({ params }: { params: { id: string }
                           <div className="flex items-center gap-1">
                             <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                             <span className="font-semibold">{provider.rating}</span>
-                            <span className="text-muted-foreground">({provider.reviews.length} reviews)</span>
+                            <span className="text-muted-foreground">({provider.reviewCount} reviews)</span>
                           </div>
                           <div className="flex items-center gap-1">
                             <MapPin className="h-4 w-4 text-muted-foreground" />

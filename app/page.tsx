@@ -144,10 +144,21 @@ export default function HomePage() {
               <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
                 About
               </Link>
+              <Link href="/customer/dashboard" className="text-muted-foreground hover:text-foreground transition-colors">
+                My Dashboard
+              </Link>
               <WhatsAppBotButton variant="outline" />
             </nav>
             
             <div className="flex items-center space-x-2">
+              <div className="hidden sm:flex items-center space-x-2 mr-2">
+                <Link href="/customer/login">
+                  <Button variant="ghost" size="sm">Customer Login</Button>
+                </Link>
+                <Link href="/customer/register">
+                  <Button variant="ghost" size="sm">Sign Up</Button>
+                </Link>
+              </div>
               <Link href="/provider/login">
                 <Button variant="outline" className="hidden sm:inline-flex">Provider Login</Button>
               </Link>
@@ -396,7 +407,64 @@ export default function HomePage() {
         </div>
       </section>
 
-      
+      {/* Customer Sign Up CTA Section */}
+      <section className="py-16 bg-gradient-to-br from-blue-500 to-blue-600 text-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="md:w-1/2 space-y-4">
+              <Badge variant="outline" className="border-white text-white mb-2">
+                For Customers
+              </Badge>
+              <h2 className="text-3xl font-bold">Create Your Account Today</h2>
+              <p className="text-blue-100 max-w-md">
+                Sign up to track your service history, save favorite providers, and get personalized recommendations.
+              </p>
+              <div className="flex flex-wrap gap-4 pt-4">
+                <Link href="/customer/register">
+                  <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+                    Sign Up Now
+                  </Button>
+                </Link>
+                <Link href="/customer/login">
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                    Login
+                  </Button>
+                </Link>
+              </div>
+            </div>
+            <div className="md:w-1/2 flex justify-center">
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 max-w-md w-full">
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                      <CheckCheck className="w-5 h-5" />
+                    </div>
+                    <p className="font-medium">Track your service history</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                      <CheckCheck className="w-5 h-5" />
+                    </div>
+                    <p className="font-medium">Save favorite service providers</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                      <CheckCheck className="w-5 h-5" />
+                    </div>
+                    <p className="font-medium">Get personalized recommendations</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                      <CheckCheck className="w-5 h-5" />
+                    </div>
+                    <p className="font-medium">Request services with one click</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose Us Section */}
       <section className="py-16 bg-gradient-to-br from-blue-50 to-blue-100">
